@@ -15,7 +15,7 @@ public class Item : MonoBehaviour {
             owner = other.GetComponent<Queue>().Owner; 
         }
         if(other.name.Contains("holdingspot")){
-            Owner.MyQueue.InsertAt(owner.MyQueue.IndexOf(holdingSpotList[other]));
+            Owner.MyQueue.ItemList.Insert(Owner.MyQueue.HoldingSpots.IndexOf(other.gameObject), this);
         }
 
         Owner.MyQueue.ReDrawQueue();
@@ -30,7 +30,7 @@ public class Item : MonoBehaviour {
     {
 		if (other.name.Contains("holdingspot"))
 		{
-            Owner.myQueue.Remove(this);
+            Owner.MyQueue.ItemList.Remove(this);
 		}
     }
 
