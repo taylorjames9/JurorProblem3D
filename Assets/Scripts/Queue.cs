@@ -9,8 +9,14 @@ public class Queue : MonoBehaviour {
     public List<GameObject> HoldingSpots;
     public Character Owner;
 
+
+
+    public void Start(){
+        ReDrawQueue();
+    }
+
     public void ReDrawQueue(){
-        for (int i = 0; i < HoldingSpots.Count;i++){
+        for (int i = 0; i < ItemList.Count;i++){
             if (ItemList[i] != null)
             {
                 ItemList[i].transform.position = HoldingSpots[i].transform.position;

@@ -10,7 +10,13 @@ public class Item : MonoBehaviour {
     public bool Dislodged { get { return dislodged; } set { dislodged = value; } }
     public Vector3 CarryOffset { get { return carryOffset; } set { carryOffset = value; } }
 	public float CarryDistance { get { return carryDistance; } set { carryDistance = value; } }
+    public Queue MyQueue { get { return myQueue; } set {myQueue = value; } }
 
+
+    void Start(){
+        myQueue = transform.parent.transform.GetComponent<Queue>();
+        owner = myQueue.Owner;
+    }
 
 	void Update(){
         if (grabbed)
@@ -23,21 +29,26 @@ public class Item : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.name.Contains(("queue"))){
-            owner = other.GetComponent<Queue>().Owner; 
-        }
-        if(other.name.Contains("holdingspot")){
-            Owner.MyQueue.ItemList.Insert(Owner.MyQueue.HoldingSpots.IndexOf(other.gameObject), this);
-        }
+        //if(other.name.Contains(("queue"))){
+        //    owner = other.GetComponent<Queue>().Owner; 
+        //}
+        //if(other.name.Contains("holdingspot")){
+        //    Owner.MyQueue.ItemList.Insert(Owner.MyQueue.HoldingSpots.IndexOf(other.gameObject), this);
+        //}
 
-        Owner.MyQueue.ReDrawQueue();
+        //Owner.MyQueue.ReDrawQueue();
     }
 
     private void OnTriggerExit(Collider other)
     {
-		if (other.name.Contains("holdingspot"))
+		if (other.name.Contains("holdingspot") && Owner)
 		{
+            Debug.Log("My owner used to be: " + Owner.name);
+            Debug.Log("My owner used to have the following items: " +Owner.MyQueue.ItemList);
             Owner.MyQueue.ItemList.Remove(this);
+			Debug.Log("But after the big tear out...my owner now has: " + Owner.MyQueue.ItemList);
+            MyQueue = null;
+			Owner = null;
 		}
     }
 
@@ -50,4 +61,5 @@ public class Item : MonoBehaviour {
 	private bool dislodged;
     private Vector3 carryOffset;
     private float carryDistance;
+    private Queue myQueue;
 }

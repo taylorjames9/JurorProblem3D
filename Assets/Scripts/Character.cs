@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour {
 
-    public Queue MyQueue{ get { return myQueue; } set { myQueue = value; }}
+    //public Queue MyQueue{ get { return myQueue; } set { myQueue = value; }}
+    public Queue MyQueue;
     public float speed;
 
     void Start(){
@@ -41,7 +42,7 @@ public class Character : MonoBehaviour {
         
     }
 
-    private Queue myQueue;
+    //private Queue myQueue;
     private bool isMain;
     private Color myColor;
     private Character target;
