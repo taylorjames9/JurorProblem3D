@@ -35,14 +35,19 @@ public class Item : MonoBehaviour {
     {
         if (other.GetComponent<HoldingSpot>() && Owner)
         {
-            Owner = other.GetComponent<HoldingSpot>().Owner;
+			grabbed = false;
+			Owner = other.GetComponent<HoldingSpot>().Owner;
             MyQueue = other.GetComponent<HoldingSpot>().MyQueue;
             transform.SetParent(MyQueue.transform);
 			Debug.Log("My owner is now: " + Owner.name);
             Debug.Log("MyQueue is now: " + MyQueue.name);
-            transform.position = other.transform.position;
-            grabbed = false;
 
+            myholdingspot = other.GetComponent<HoldingSpot>();
+            transform.position = myholdingspot.transform.position;
+            transform.rotation = myholdingspot.transform.rotation;
+            if (!MyQueue.ItemList.Contains(transform.GetComponent<Item>())){
+                MyQueue.ItemList.Add(this);
+            }
         }
 
         Owner.MyQueue.ReDrawQueue();
