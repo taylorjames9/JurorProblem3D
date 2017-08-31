@@ -17,10 +17,8 @@ public class Queue : MonoBehaviour {
 
     public void ReDrawQueue(){
         for (int i = 0; i < ItemList.Count;i++){
-            if (ItemList[i] != null)
-            {
-                ItemList[i].transform.position = HoldingSpots[i].transform.position;
-            }
+           ItemList[i].transform.position = HoldingSpots[i].transform.position;
         }
+        Debug.Log("Redrawing the queue");
     }
 }

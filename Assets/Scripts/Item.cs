@@ -11,6 +11,7 @@ public class Item : MonoBehaviour {
     public Vector3 CarryOffset { get { return carryOffset; } set { carryOffset = value; } }
 	public float CarryDistance { get { return carryDistance; } set { carryDistance = value; } }
     public Queue MyQueue { get { return myQueue; } set {myQueue = value; } }
+    public HoldingSpot MyHoldingSpot{ get { return myholdingspot; }set { myholdingspot = value; }}
 
 
     void Start(){
@@ -21,34 +22,44 @@ public class Item : MonoBehaviour {
 	void Update(){
         if (grabbed)
         {
-            carryDistance = Vector3.Distance(Veil.Instance.HeadTransform.position, transform.position);
+            //carryDistance = Vector3.Distance(Veil.Instance.HeadTransform.position, transform.position);
             transform.position = Veil.Instance.HeadTransform.position + (Veil.Instance.HeadTransform.forward * carryDistance);
 
+        }
+        if(Input.GetKeyDown(KeyCode.Space)){
+            grabbed = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //if(other.name.Contains(("queue"))){
-        //    owner = other.GetComponent<Queue>().Owner; 
-        //}
-        //if(other.name.Contains("holdingspot")){
-        //    Owner.MyQueue.ItemList.Insert(Owner.MyQueue.HoldingSpots.IndexOf(other.gameObject), this);
-        //}
+        if (other.GetComponent<HoldingSpot>() && Owner)
+        {
+            Owner = other.GetComponent<HoldingSpot>().Owner;
+            MyQueue = other.GetComponent<HoldingSpot>().MyQueue;
+            transform.SetParent(MyQueue.transform);
+			Debug.Log("My owner is now: " + Owner.name);
+            Debug.Log("MyQueue is now: " + MyQueue.name);
+            transform.position = other.transform.position;
+            grabbed = false;
 
-        //Owner.MyQueue.ReDrawQueue();
+        }
+
+        Owner.MyQueue.ReDrawQueue();
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-		if (other.name.Contains("holdingspot") && Owner)
+		if (other.GetComponent<HoldingSpot>() && Owner)
 		{
             Debug.Log("My owner used to be: " + Owner.name);
             Debug.Log("My owner used to have the following items: " +Owner.MyQueue.ItemList);
             Owner.MyQueue.ItemList.Remove(this);
 			Debug.Log("But after the big tear out...my owner now has: " + Owner.MyQueue.ItemList);
-            MyQueue = null;
-			Owner = null;
+            //MyQueue = null;
+			//Owner = null;
+            //transform.parent = null;
 		}
     }
 
@@ -62,4 +73,5 @@ public class Item : MonoBehaviour {
     private Vector3 carryOffset;
     private float carryDistance;
     private Queue myQueue;
+    private HoldingSpot myholdingspot;
 }

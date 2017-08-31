@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 111162177}
   - component: {fileID: 111162176}
   - component: {fileID: 111162175}
+  - component: {fileID: 111162178}
   m_Layer: 0
   m_Name: holdingspot0
   m_TagString: Untagged
@@ -190,6 +191,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111162173}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &111162178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111162173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 332792629}
+  MyQueue: {fileID: 1900676315}
 --- !u!1 &137536353
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +215,7 @@ GameObject:
   - component: {fileID: 137536357}
   - component: {fileID: 137536356}
   - component: {fileID: 137536355}
+  - component: {fileID: 137536358}
   m_Layer: 0
   m_Name: holdingspot3
   m_TagString: Untagged
@@ -272,6 +287,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 137536353}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &137536358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137536353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1098995829}
+  MyQueue: {fileID: 974559688}
 --- !u!1 &167430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +393,7 @@ GameObject:
   - component: {fileID: 296339461}
   - component: {fileID: 296339460}
   - component: {fileID: 296339459}
+  - component: {fileID: 296339462}
   m_Layer: 0
   m_Name: holdingspot3
   m_TagString: Untagged
@@ -436,6 +465,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 296339457}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &296339462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 296339457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 332792629}
+  MyQueue: {fileID: 1900676315}
 --- !u!1 &332792627
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +618,7 @@ GameObject:
   - component: {fileID: 416197505}
   - component: {fileID: 416197504}
   - component: {fileID: 416197503}
+  - component: {fileID: 416197506}
   m_Layer: 0
   m_Name: holdingspot4
   m_TagString: Untagged
@@ -647,6 +690,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416197501}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &416197506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416197501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1098995829}
+  MyQueue: {fileID: 974559688}
 --- !u!1 &576106271
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +714,7 @@ GameObject:
   - component: {fileID: 576106275}
   - component: {fileID: 576106274}
   - component: {fileID: 576106273}
+  - component: {fileID: 576106276}
   m_Layer: 0
   m_Name: holdingspot2
   m_TagString: Untagged
@@ -729,6 +786,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 576106271}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &576106276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576106271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1098995829}
+  MyQueue: {fileID: 974559688}
 --- !u!1 &587141738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1123,7 @@ GameObject:
   - component: {fileID: 815489510}
   - component: {fileID: 815489509}
   - component: {fileID: 815489508}
+  - component: {fileID: 815489511}
   m_Layer: 0
   m_Name: holdingspot0
   m_TagString: Untagged
@@ -1124,6 +1195,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815489506}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &815489511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815489506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1098995829}
+  MyQueue: {fileID: 974559688}
 --- !u!1 &837282095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1302,7 @@ GameObject:
   - component: {fileID: 838978313}
   - component: {fileID: 838978312}
   - component: {fileID: 838978311}
+  - component: {fileID: 838978314}
   m_Layer: 0
   m_Name: holdingspot1
   m_TagString: Untagged
@@ -1289,6 +1374,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 838978309}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &838978314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 838978309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1468110519}
+  MyQueue: {fileID: 1454746648}
 --- !u!1 &843223795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1482,7 @@ GameObject:
   - component: {fileID: 907613560}
   - component: {fileID: 907613563}
   - component: {fileID: 907613564}
+  - component: {fileID: 907613565}
   m_Layer: 0
   m_Name: blue_motiv
   m_TagString: Untagged
@@ -1481,6 +1580,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &907613565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907613558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a8cb3b98cfbd428fc17c3a53ddf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilterTag:
+    Tag: Default
 --- !u!1 &974559686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1603,7 @@ GameObject:
   - component: {fileID: 974559687}
   - component: {fileID: 974559688}
   m_Layer: 0
-  m_Name: Queue (2)
+  m_Name: Orange_Queue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1675,6 +1787,7 @@ GameObject:
   - component: {fileID: 1108547401}
   - component: {fileID: 1108547400}
   - component: {fileID: 1108547399}
+  - component: {fileID: 1108547402}
   m_Layer: 0
   m_Name: holdingspot0
   m_TagString: Untagged
@@ -1746,6 +1859,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1108547397}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1108547402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108547397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1468110519}
+  MyQueue: {fileID: 1454746648}
 --- !u!1 &1126903648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,6 +1972,7 @@ GameObject:
   - component: {fileID: 1132294454}
   - component: {fileID: 1132294453}
   - component: {fileID: 1132294452}
+  - component: {fileID: 1132294455}
   m_Layer: 0
   m_Name: holdingspot2
   m_TagString: Untagged
@@ -1917,6 +2044,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1132294450}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1132294455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132294450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 332792629}
+  MyQueue: {fileID: 1900676315}
 --- !u!1 &1269266616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,6 +2068,7 @@ GameObject:
   - component: {fileID: 1269266620}
   - component: {fileID: 1269266619}
   - component: {fileID: 1269266618}
+  - component: {fileID: 1269266621}
   m_Layer: 0
   m_Name: holdingspot4
   m_TagString: Untagged
@@ -1999,6 +2140,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1269266616}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1269266621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269266616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1468110519}
+  MyQueue: {fileID: 1454746648}
 --- !u!1 &1297862931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2246,7 @@ GameObject:
   - component: {fileID: 1303054390}
   - component: {fileID: 1303054389}
   - component: {fileID: 1303054388}
+  - component: {fileID: 1303054391}
   m_Layer: 0
   m_Name: holdingspot1
   m_TagString: Untagged
@@ -2163,6 +2318,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1303054386}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1303054391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303054386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 332792629}
+  MyQueue: {fileID: 1900676315}
 --- !u!1 &1353538588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,7 +2431,7 @@ GameObject:
   - component: {fileID: 1454746647}
   - component: {fileID: 1454746648}
   m_Layer: 0
-  m_Name: Queue
+  m_Name: Green_Queue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2451,6 +2619,7 @@ GameObject:
   - component: {fileID: 1552477122}
   - component: {fileID: 1552477125}
   - component: {fileID: 1552477126}
+  - component: {fileID: 1552477127}
   m_Layer: 0
   m_Name: black_motiv
   m_TagString: Untagged
@@ -2548,6 +2717,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1552477127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552477120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a8cb3b98cfbd428fc17c3a53ddf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilterTag:
+    Tag: Default
 --- !u!1 &1566817392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2741,7 @@ GameObject:
   - component: {fileID: 1566817396}
   - component: {fileID: 1566817395}
   - component: {fileID: 1566817394}
+  - component: {fileID: 1566817397}
   m_Layer: 0
   m_Name: holdingspot1
   m_TagString: Untagged
@@ -2630,6 +2813,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566817392}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1566817397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566817392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1098995829}
+  MyQueue: {fileID: 974559688}
 --- !u!1 &1594671551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,6 +2837,7 @@ GameObject:
   - component: {fileID: 1594671555}
   - component: {fileID: 1594671554}
   - component: {fileID: 1594671553}
+  - component: {fileID: 1594671556}
   m_Layer: 0
   m_Name: holdingspot2
   m_TagString: Untagged
@@ -2712,6 +2909,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594671551}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1594671556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594671551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1468110519}
+  MyQueue: {fileID: 1454746648}
 --- !u!1 &1752749878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +3017,7 @@ GameObject:
   - component: {fileID: 1789093636}
   - component: {fileID: 1789093639}
   - component: {fileID: 1789093640}
+  - component: {fileID: 1789093641}
   m_Layer: 0
   m_Name: orange_motiv
   m_TagString: Untagged
@@ -2904,6 +3115,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1789093641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789093634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a8cb3b98cfbd428fc17c3a53ddf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilterTag:
+    Tag: Default
 --- !u!1 &1900676313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,7 +3138,7 @@ GameObject:
   - component: {fileID: 1900676314}
   - component: {fileID: 1900676315}
   m_Layer: 0
-  m_Name: Queue (1)
+  m_Name: Blue_Queue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2974,6 +3198,8 @@ GameObject:
   - component: {fileID: 2056489934}
   - component: {fileID: 2056489937}
   - component: {fileID: 2056489938}
+  - component: {fileID: 2056489939}
+  - component: {fileID: 2056489940}
   m_Layer: 0
   m_Name: green_motiv
   m_TagString: Untagged
@@ -3071,6 +3297,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2056489939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056489932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a8cb3b98cfbd428fc17c3a53ddf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilterTag:
+    Tag: Default
+--- !u!114 &2056489940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056489932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a8cb3b98cfbd428fc17c3a53ddf59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilterTag:
+    Tag: Default
 --- !u!1 &2060858056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,6 +3334,7 @@ GameObject:
   - component: {fileID: 2060858060}
   - component: {fileID: 2060858059}
   - component: {fileID: 2060858058}
+  - component: {fileID: 2060858061}
   m_Layer: 0
   m_Name: holdingspot4
   m_TagString: Untagged
@@ -3153,6 +3406,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060858056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2060858061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060858056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 332792629}
+  MyQueue: {fileID: 1900676315}
 --- !u!1 &2123578869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3430,7 @@ GameObject:
   - component: {fileID: 2123578873}
   - component: {fileID: 2123578872}
   - component: {fileID: 2123578871}
+  - component: {fileID: 2123578874}
   m_Layer: 0
   m_Name: holdingspot3
   m_TagString: Untagged
@@ -3235,6 +3502,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2123578869}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2123578874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123578869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47ece8efe06848839df502c58b7b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Owner: {fileID: 1468110519}
+  MyQueue: {fileID: 1454746648}
 --- !u!1 &2143129066
 GameObject:
   m_ObjectHideFlags: 0
