@@ -24,10 +24,12 @@ public class Item : MonoBehaviour {
         {
             //carryDistance = Vector3.Distance(Veil.Instance.HeadTransform.position, transform.position);
             transform.position = Veil.Instance.HeadTransform.position + (Veil.Instance.HeadTransform.forward * carryDistance);
+            //Owner.MyQueue.ReDrawQueue();
 
         }
         if(Input.GetKeyDown(KeyCode.Space)){
             grabbed = false;
+            //Owner.MyQueue.ReDrawQueue();
         }
     }
 
@@ -35,18 +37,23 @@ public class Item : MonoBehaviour {
     {
         if (other.GetComponent<HoldingSpot>() && Owner)
         {
-			grabbed = false;
-			Owner = other.GetComponent<HoldingSpot>().Owner;
-            MyQueue = other.GetComponent<HoldingSpot>().MyQueue;
-            transform.SetParent(MyQueue.transform);
-			Debug.Log("My owner is now: " + Owner.name);
-            Debug.Log("MyQueue is now: " + MyQueue.name);
+            if (other.GetComponent<HoldingSpot>().Empty)
+            {
 
-            myholdingspot = other.GetComponent<HoldingSpot>();
-            transform.position = myholdingspot.transform.position;
-            transform.rotation = myholdingspot.transform.rotation;
-            if (!MyQueue.ItemList.Contains(transform.GetComponent<Item>())){
-                MyQueue.ItemList.Add(this);
+                grabbed = false;
+                Owner = other.GetComponent<HoldingSpot>().Owner;
+                MyQueue = other.GetComponent<HoldingSpot>().MyQueue;
+                transform.SetParent(MyQueue.transform);
+                Debug.Log("My owner is now: " + Owner.name);
+                Debug.Log("MyQueue is now: " + MyQueue.name);
+
+                myholdingspot = other.GetComponent<HoldingSpot>();
+                transform.position = myholdingspot.transform.position;
+                transform.rotation = myholdingspot.transform.rotation;
+                if (!MyQueue.ItemList.Contains(transform.GetComponent<Item>()))
+                {
+                    MyQueue.ItemList.Add(this);
+                }
             }
         }
 
@@ -65,6 +72,7 @@ public class Item : MonoBehaviour {
             //MyQueue = null;
 			//Owner = null;
             //transform.parent = null;
+            //Owner.MyQueue.ReDrawQueue();
 		}
     }
 

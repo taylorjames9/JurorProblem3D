@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 332792629}
   MyQueue: {fileID: 1900676315}
+  Empty: 0
 --- !u!1 &137536353
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1098995829}
   MyQueue: {fileID: 974559688}
+  Empty: 0
 --- !u!1 &167430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 332792629}
   MyQueue: {fileID: 1900676315}
+  Empty: 0
 --- !u!1 &332792627
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1098995829}
   MyQueue: {fileID: 974559688}
+  Empty: 0
 --- !u!1 &576106271
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1098995829}
   MyQueue: {fileID: 974559688}
+  Empty: 0
 --- !u!1 &587141738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1098995829}
   MyQueue: {fileID: 974559688}
+  Empty: 0
 --- !u!1 &837282095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1468110519}
   MyQueue: {fileID: 1454746648}
+  Empty: 0
 --- !u!1 &843223795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,11 +1651,11 @@ MonoBehaviour:
   ItemList:
   - {fileID: 2056489937}
   HoldingSpots:
-  - {fileID: 815489506}
-  - {fileID: 1566817392}
-  - {fileID: 576106271}
-  - {fileID: 137536353}
-  - {fileID: 416197501}
+  - {fileID: 815489511}
+  - {fileID: 1566817397}
+  - {fileID: 576106276}
+  - {fileID: 137536358}
+  - {fileID: 416197506}
   Owner: {fileID: 1098995829}
 --- !u!23 &974559689
 MeshRenderer:
@@ -1787,7 +1794,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098995827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: -4.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2143129070}
@@ -1906,6 +1913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1468110519}
   MyQueue: {fileID: 1454746648}
+  Empty: 0
 --- !u!1 &1126903648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,6 +2099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 332792629}
   MyQueue: {fileID: 1900676315}
+  Empty: 0
 --- !u!1 &1269266616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,6 +2196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1468110519}
   MyQueue: {fileID: 1454746648}
+  Empty: 0
 --- !u!1 &1297862931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,6 +2375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 332792629}
   MyQueue: {fileID: 1900676315}
+  Empty: 0
 --- !u!1 &1353538588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,8 +2409,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1353538588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7585846, y: 4.77037, z: 8.730854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2506,11 +2517,11 @@ MonoBehaviour:
   ItemList:
   - {fileID: 907613563}
   HoldingSpots:
-  - {fileID: 1108547397}
-  - {fileID: 838978309}
-  - {fileID: 1594671551}
-  - {fileID: 2123578869}
-  - {fileID: 1269266616}
+  - {fileID: 1108547402}
+  - {fileID: 838978314}
+  - {fileID: 1594671556}
+  - {fileID: 2123578874}
+  - {fileID: 1269266621}
   Owner: {fileID: 1468110519}
 --- !u!23 &1454746649
 MeshRenderer:
@@ -2749,8 +2760,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1548846271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023, y: 0.121, z: -0.256}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.09000003, y: 0.12100005, z: 0.009999782}
   m_LocalScale: {x: 0.3191247, y: 1.6997064, z: 0.3587665}
   m_Children: []
   m_Father: {fileID: 1454746647}
@@ -3058,6 +3069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1098995829}
   MyQueue: {fileID: 974559688}
+  Empty: 0
 --- !u!1 &1594671551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,6 +3166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1468110519}
   MyQueue: {fileID: 1454746648}
+  Empty: 0
 --- !u!1 &1646420278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,11 +3508,11 @@ MonoBehaviour:
   - {fileID: 1789093639}
   - {fileID: 1552477125}
   HoldingSpots:
-  - {fileID: 111162173}
-  - {fileID: 1303054386}
-  - {fileID: 1132294450}
-  - {fileID: 296339457}
-  - {fileID: 2060858056}
+  - {fileID: 111162178}
+  - {fileID: 1303054391}
+  - {fileID: 1132294455}
+  - {fileID: 296339462}
+  - {fileID: 2060858061}
   Owner: {fileID: 332792629}
 --- !u!23 &1900676316
 MeshRenderer:
@@ -3767,6 +3780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 332792629}
   MyQueue: {fileID: 1900676315}
+  Empty: 0
 --- !u!1 &2123578869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3863,6 +3877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Owner: {fileID: 1468110519}
   MyQueue: {fileID: 1454746648}
+  Empty: 0
 --- !u!1 &2143129066
 GameObject:
   m_ObjectHideFlags: 0

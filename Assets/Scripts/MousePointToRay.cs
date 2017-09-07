@@ -20,8 +20,8 @@ public class MousePointToRay : MonoBehaviour {
                 if (hit.transform.GetComponent<Item>() != null)
                 {
                     hit.transform.GetComponent<Item>().Grabbed = true;
-                    hit.transform.GetComponent<Item>().CarryOffset = HUX.Veil.Instance.HeadTransform.position - transform.position;
-                    hit.transform.GetComponent<Item>().CarryDistance = Vector3.Distance(HUX.Veil.Instance.HeadTransform.position, transform.position);
+                    //hit.transform.GetComponent<Item>().CarryOffset = hit.transform.GetComponent<Item>().transform.position - HUX.Veil.Instance.HeadTransform.position;
+                    hit.transform.GetComponent<Item>().CarryDistance = Vector3.Distance(HUX.Veil.Instance.HeadTransform.position, hit.transform.GetComponent<Item>().transform.position);
                     Debug.Log("Item name is : " + hit.transform.name + " " + "grabbed state is: " + hit.transform.GetComponent<Item>().Grabbed);
                     Debug.Log("Carry Offset is set to: " + hit.transform.GetComponent<Item>().CarryOffset);
                 }

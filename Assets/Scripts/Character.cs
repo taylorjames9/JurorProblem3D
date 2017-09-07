@@ -42,6 +42,10 @@ public class Character : MonoBehaviour {
         
     }
 
+    public void GetStabbed(){
+        
+    }
+
     //private Queue myQueue;
     private bool isMain;
     private Color myColor;
