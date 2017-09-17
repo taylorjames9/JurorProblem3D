@@ -4,6 +4,8 @@ using UnityEngine;
 using VRTK;
 using VRTK.GrabAttachMechanics;
 
+public enum ColorList { None, Blue, Orange, Green, Black, Red, Purple, Yellow }
+
 public class Item : MonoBehaviour {
 
     public bool Grabbed { get { return grabbed; } set { grabbed = value; } }
@@ -13,7 +15,7 @@ public class Item : MonoBehaviour {
 	public float CarryDistance { get { return carryDistance; } set { carryDistance = value; } }
     public Queue MyQueue { get { return myQueue; } set {myQueue = value; } }
     public HoldingSpot MyHoldingSpot{ get { return myholdingspot; }set { myholdingspot = value; }}
-
+    public ColorList ItemColor = ColorList.None;
 
     private void OnEnable()
     {

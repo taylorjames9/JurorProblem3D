@@ -22,12 +22,58 @@ public class GameManager : MonoBehaviour {
         Instance = this;
 	}
 
+    private void OnEnable()
+    {
+        GoButton.OnStartSequence += ExecuteSequence;
+    }
+
+    private void OnDisable()
+    {
+        GoButton.OnStartSequence -= ExecuteSequence;
+    }
+
     public void SetFloorColor(bool black)
     {
         if (black) 
             Floor.GetComponent<Renderer>().material.color = Color.black;
         else
             Floor.GetComponent<Renderer>().material.color = Color.white;
+    }
+
+    public void ExecuteSequence()
+    {
+        StartCoroutine(MainCharacter.ApproachMyTarget());
+        Debug.Log("Approaching my target");
+    }
+
+    public Character ConvertItemColorToTarget(ColorList cl)
+    {
+        Character tempChar = null;
+        switch (cl)
+        {
+            case ColorList.Green:
+                tempChar = allCharactersInScene[2];
+                break;
+
+            case ColorList.Orange:
+                tempChar = allCharactersInScene[1];
+
+                break;
+
+            case ColorList.Black:
+
+                break;
+
+            case ColorList.Blue:
+                tempChar = allCharactersInScene[0];
+
+                break;
+
+            default:
+
+                break;
+        }
+        return tempChar;
     }
 
 
